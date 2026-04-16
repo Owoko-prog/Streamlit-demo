@@ -15,9 +15,7 @@ model.fit(X_train, y_train)
 # 4. Check accuracy
 predictions = model.predict(X_test)
 print(f"Model Accuracy: {accuracy_score(y_test, predictions) * 100:.2f}%")
-# 5. Save the model to a file
+# 5. Save the model to a filetreamlit run app.py
 with open("model.pkl", "wb") as f:
   pickle.dump(model, f)
 print("✅ Model saved as model.pkl")
-
-
